@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Quick Webpage </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="Home" class="nav top1">
+		<ul>
+			<li>
+				<a href="https://www.google.com"> Google Search </a>
+			</li>
+			<li>
+				<a href="#Contact"> Contact Us </a>
+			</li>
+			<li>
+				<a href="#About"> About Us </a>
+			</li>
+			<li>
+				<a href="#Home"> Home </a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 	Do not worry if the text breaks how the webpage looks because I can fix that. -->
+
+
+	<div class="psuedopage toppage">
+		<br />
+		<br />
+		<h1> Welcome </h1>
+		<br />
+		<p> DevOps culture is all about a shared understanding between developers and operations, and sharing responsibility for the software they build. </p> <!--   <<  add text here  <<   -->
+		<p>  That means increasing transparency, communication, and collaboration across development, IT/operations, and "the business".</p> <!--   <<  add text here  <<   -->
+	</div>
+	
+	<div  id="About" class="nav middle2">
+		<ul>
+			<li>
+				<a href="https://www.google.com"> Google Search </a>
+			</li>
+			<li>
+				<a href="#Contact"> Contact Us </a>
+			</li>
+			<li>
+				<a href="#About"> About Us </a>
+			</li>
+			<li>
+				<a href="#Home"> Home </a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="psuedopage midpage">
+		<br />
+		<br />
+		<h1> About Us </h1>
+		<br />
+		<p> Under a DevOps model, development and operations teams are no longer “siloed.” Sometimes, these two teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function.  </p><!--   <<  add text here  <<   -->
+		<p> In some DevOps models, quality assurance and security teams may also become more tightly integrated with development and operations and throughout the application lifecycle. When security is the focus of everyone on a DevOps team, this is sometimes referred to as DevSecOps. </p><!--   <<  add text here  <<   -->
+		<p> These teams use practices to automate processes that historically have been manual and slow. They use a technology stack and tooling which help them operate and evolve applications quickly and reliably. These tools also help engineers independently accomplish tasks (for example, deploying code or provisioning infrastructure) that normally would have required help from other teams, and this further increases a team’s velocity.</p><!--   <<  add text here  <<   -->
+	</div>
+	
+	<div id="Contact" class="nav bottom3">
+		<ul>
+			<li>
+				<a href="#Home"> Home </a>
+			</li>
+		</ul>
+	</div id="Contact">
+
+	<div class="psuedopage bottompage">
+		<br />
+		<br />
+		<h1> Contact Us </h1>
+		<br />
+		<form>
+			<legend> Contact Support </legend>
+			<br />
+			<label for="msgText"> <b>Message:</b></label><br />
+			<input type="text" name="msgText" class="msginput" value="your message here" />
+			<br />
+			<input class="btnSubmit" type="Submit" value="submit" />
+		</form>
+	</div>
+	
+
+
+
+
+	<Style>
+		a {
+			text-decoration: none;
+			z-index:5;
+			width:150px;
+			padding:2px;
+		}
+
+        ul {
+            height: auto;
+			right:0%;
+			left:0%;
+            background-color: #e5e5e5;
+            padding: 0.5% 10% 0.5% 0 ;
+            list-style: none;
+			position:fixed;
+        }
+
+		.nav {
+			height:05%;
+			margin:0;
+			padding-right:5%;
+			width: 100%;
+			position:absolute;
+			z-index:3;
+		}
+
+		li {
+			max-width: 125px;
+			padding: 2px;
+			text-align: center;
+			font-size: 1.1em;
+			position: relative;
+			margin: 0 8px 0 8px;
+			float: right;
+		}
+
+        .top1 {
+            top: 0%;
+			bottom:05%;
+			z-index:9;
+        }
+        .middle2 {
+            top: 100%;
+			bottom:105%;
+			z-index:0;
+        }
+        .bottom3 {
+            top: 200%;
+			bottom:205%;
+			z-index:0;
+        }
+
+		form {
+			top:20%;
+			bottom:40%;
+			left:30%;
+			right:30%;
+			position:absolute;
+			z-index:6;
+			padding:1%;
+			border: 1px solid black;
+		}
+		
+		legend{
+			font-size:1.8em;
+		}
+
+		.psuedopage {
+			margin-left: 8%;
+			margin-right: 8%;
+			position: absolute;
+			height: 94%;
+			padding-left:5%;
+			padding-right:5%;
+			width: 74%;
+			z-index:2;
+		}
+
+
+        .toppage {
+            top:05% !important;
+			bottom:99%;
+        }
+
+        .midpage {
+            top: 105% !important;
+			bottom:199%;
+        }
+
+		.msginput {
+			height:20%;
+			width: 80%;
+		}
+
+        .bottompage {
+            top:205% !important;
+            bottom:298% !important;
+        }
+
+		html {
+			height: auto;
+			width: auto;
+		}
+
+		body {
+			height:400%;
+			width: auto;
+			overflow: hidden;
+			margin: 0% !important;
+			background-color: rgb(140,140,140);
+		}
+	</Style>
+</body>
+</html>
